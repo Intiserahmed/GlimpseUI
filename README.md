@@ -7,7 +7,7 @@ AI-powered cross-platform UI testing. Describe a task in plain English — the a
 → compiles once → ⚡ cached forever
 ```
 
-<video src="demo.mp4" autoplay loop muted playsinline width="100%"></video>
+<video src="https://github.com/Intiserahmed/GlimpseUI/raw/main/demo.mp4" autoplay loop muted playsinline width="100%"></video>
 
 ---
 
