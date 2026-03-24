@@ -1,0 +1,15 @@
+name: "Hacker News Top Stories"
+platform: web
+url: https://news.ycombinator.com
+
+steps:
+  - task: "Find and click the top story on Hacker News"
+  - assert: "An external article or website from the top story is open"
+
+  - task: "Go back to Hacker News"
+  - check: url_contains "ycombinator.com"
+  - assert: "Hacker News homepage with story list is visible"
+
+  - task: "Click the comments link on the top story"
+  - check: url_contains "item?id="
+  - assert: "The Hacker News comments page for the story is open"

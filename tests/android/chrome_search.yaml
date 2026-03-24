@@ -1,0 +1,16 @@
+name: "Chrome - Web Search"
+platform: android
+app: com.android.chrome
+
+steps:
+  - task: "Open Chrome browser"
+  - assert: "Chrome browser is open"
+
+  - task: "Tap the address bar and search for 'latest Android features'"
+  - assert: "Search results about Android features are visible"
+
+  - task: "Open the first search result"
+  - assert: "An article or page about Android features is open"
+
+  - task: "Go back to the search results"
+  - assert: "Search results page is visible again"

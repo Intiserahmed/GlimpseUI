@@ -1,0 +1,13 @@
+name: "OpenStreetMap Location Search"
+platform: web
+url: https://www.openstreetmap.org
+
+steps:
+  - task: "Search for 'Eiffel Tower, Paris' on OpenStreetMap"
+  - assert: "The map is showing the area around Paris, France"
+
+  - task: "Click on the Eiffel Tower marker or the first search result"
+  - assert: "A popup or details panel showing information about the Eiffel Tower is visible"
+
+  - task: "Zoom in on the map twice using the zoom in button"
+  - assert: "The map is zoomed in closer to the Eiffel Tower location"

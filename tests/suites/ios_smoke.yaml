@@ -1,0 +1,15 @@
+name: "iOS Smoke Suite"
+platform: ios
+
+# Fast iOS sanity check — core system apps only.
+# Requires: XCTest bridge running on port 22087.
+
+steps:
+  - task: "Open the Calculator app and calculate 99 plus 1"
+  - assert: "Calculator shows 100"
+
+  - task: "Open the Notes app and create a note with the text 'Smoke test passed'"
+  - assert: "Note with 'Smoke test passed' text is visible"
+
+  - task: "Open Settings and confirm the main settings list is visible"
+  - assert: "Settings categories like General, Display, Privacy are visible"

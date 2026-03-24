@@ -1,0 +1,13 @@
+name: "Play Store - Search App"
+platform: android
+app: com.android.vending
+
+steps:
+  - task: "Open the Google Play Store"
+  - assert: "Play Store is open on the home or apps tab"
+
+  - task: "Search for 'Notion' in the Play Store"
+  - assert: "Search results showing Notion and related apps are visible"
+
+  - task: "Tap on the Notion app in the results"
+  - assert: "Notion app detail page is open with Install or Open button visible"

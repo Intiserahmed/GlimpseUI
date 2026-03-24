@@ -1,0 +1,13 @@
+name: "Calculator - Basic Arithmetic"
+platform: ios
+app: com.apple.calculator
+
+steps:
+  - task: "Open the Calculator app"
+  - assert: "Calculator app is open with number buttons visible"
+
+  - task: "Calculate 123 multiplied by 45"
+  - assert: "The calculator display shows 5535 as the result"
+
+  - task: "Clear the calculator and calculate 100 divided by 4"
+  - assert: "The calculator display shows 25 as the result"

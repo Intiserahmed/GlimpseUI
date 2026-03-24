@@ -1,0 +1,14 @@
+#!/bin/bash
+# Seer — start the server and open the Studio UI in your browser
+set -e
+
+cd "$(dirname "$0")"
+
+if [ -d "venv" ]; then
+  source venv/bin/activate
+elif [ -d ".venv" ]; then
+  source .venv/bin/activate
+fi
+
+echo "Starting Seer..."
+python main.py

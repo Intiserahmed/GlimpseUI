@@ -1,0 +1,13 @@
+name: "Safari Web Search"
+platform: ios
+app: com.apple.mobilesafari
+
+steps:
+  - task: "Open Safari"
+  - assert: "Safari browser is open"
+
+  - task: "Tap the address bar and search for 'weather today'"
+  - assert: "Search results or a weather page for today's weather is visible"
+
+  - task: "Go back to the Safari home screen or new tab page"
+  - assert: "Safari new tab or favorites screen is visible"

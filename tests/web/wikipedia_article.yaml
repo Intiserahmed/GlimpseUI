@@ -1,0 +1,15 @@
+name: "Wikipedia Article Search"
+platform: web
+url: https://en.wikipedia.org
+
+steps:
+  - task: "Search for 'Great Wall of China' on Wikipedia"
+  - check: url_contains "wikipedia.org"
+  - assert: "Wikipedia search results or article about Great Wall of China is visible"
+
+  - task: "Open the Great Wall of China article"
+  - check: url_contains "Great_Wall"
+  - assert: "The Wikipedia article about the Great Wall of China is open with content visible"
+
+  - task: "Click on the first link in the introduction section"
+  - assert: "A related Wikipedia article is open"

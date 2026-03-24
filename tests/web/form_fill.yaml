@@ -1,0 +1,14 @@
+name: "Form Fill and Submit"
+platform: web
+url: https://demoqa.com/automation-practice-form
+
+steps:
+  - task: "Fill in the First Name field with 'John'"
+  - task: "Fill in the Last Name field with 'Smith'"
+  - task: "Fill in the Email field with 'john.smith@example.com'"
+  - task: "Select the Male gender radio button"
+  - task: "Fill in the Mobile number field with '0123456789'"
+  - assert: "The form has First Name, Last Name, Email, and Mobile filled in"
+
+  - task: "Submit the form by clicking the Submit button"
+  - assert: "A confirmation modal or success message is displayed after form submission"

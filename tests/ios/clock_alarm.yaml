@@ -1,0 +1,19 @@
+name: "Clock - Set an Alarm"
+platform: ios
+app: com.apple.clock
+
+steps:
+  - task: "Open the Clock app"
+  - assert: "Clock app is open"
+
+  - task: "Go to the Alarm tab"
+  - assert: "The Alarm tab is active showing existing alarms or an empty list"
+
+  - task: "Tap the + button to add a new alarm"
+  - assert: "The alarm creation screen is open with a time picker"
+
+  - task: "Set the alarm time to 7:30 AM"
+  - assert: "The time picker shows 7:30 AM"
+
+  - task: "Tap Save to save the alarm"
+  - assert: "The new alarm at 7:30 AM is visible in the alarm list"

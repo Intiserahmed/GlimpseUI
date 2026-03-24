@@ -1,0 +1,146 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+		/* Build configuration list for PBXProject */
+		1A000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_TESTABILITY = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphonesimulator;
+				SWIFT_VERSION = 5.0;
+				CODE_SIGNING_ALLOWED = NO;
+			};
+			name = Debug;
+		};
+		1A000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphonesimulator;
+				SWIFT_VERSION = 5.0;
+				CODE_SIGNING_ALLOWED = NO;
+			};
+			name = Release;
+		};
+		1A000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.glimpseui.bridge.tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "";
+				TESTHOST_BUNDLE_ID = "";
+			};
+			name = Debug;
+		};
+		1A000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.glimpseui.bridge.tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "";
+				TESTHOST_BUNDLE_ID = "";
+			};
+			name = Release;
+		};
+		1A000010 /* Build configuration list for PBXProject */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (1A000001, 1A000002);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A000011 /* Build configuration list for target */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (1A000003, 1A000004);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A000020 /* GlimpseUIBridge */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.pb-project;
+			name = "GlimpseUIBridge";
+			path = "GlimpseUIBridge.xcodeproj";
+			sourceTree = "<absolute>";
+		};
+		1A000030 /* GlimpseUIBridgeTests.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = GlimpseUIBridgeTests.swift;
+			sourceTree = "<group>";
+			name = GlimpseUIBridgeTests.swift;
+		};
+		1A000040 /* GlimpseUIBridge.xctest */ = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.cfbundle;
+			includeInIndex = 0;
+			path = "GlimpseUIBridge.xctest";
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1A000050 /* Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = 1A000030;
+		};
+		1A000060 /* PBXGroup */ = {
+			isa = PBXGroup;
+			children = (1A000030, 1A000040);
+			path = GlimpseUIBridge;
+			sourceTree = "<group>";
+		};
+		1A000070 /* PBXSourcesBuildPhase */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (1A000050);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A000080 /* PBXFrameworksBuildPhase */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A000090 /* PBXNativeTarget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A000011;
+			buildPhases = (1A000070, 1A000080);
+			buildRules = ();
+			dependencies = ();
+			name = "GlimpseUIBridge";
+			productName = "GlimpseUIBridge";
+			productReference = 1A000040;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1A0000A0 /* PBXProject */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1A000010;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base);
+			mainGroup = 1A000060;
+			productRefGroup = 1A000060;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (1A000090);
+		};
+	};
+	rootObject = 1A0000A0;
+}

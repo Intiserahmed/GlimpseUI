@@ -1,0 +1,16 @@
+name: "Settings - Wi-Fi Toggle"
+platform: android
+app: com.android.settings
+
+steps:
+  - task: "Open the Settings app"
+  - assert: "Android Settings app is open"
+
+  - task: "Navigate to the Network & Internet or Wi-Fi settings"
+  - assert: "Wi-Fi settings screen is open"
+
+  - task: "Toggle Wi-Fi off"
+  - assert: "Wi-Fi is now turned off"
+
+  - task: "Toggle Wi-Fi back on"
+  - assert: "Wi-Fi is turned on"

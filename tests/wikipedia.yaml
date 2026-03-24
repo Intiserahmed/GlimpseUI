@@ -1,0 +1,9 @@
+name: "Wikipedia Search"
+platform: ios
+app: com.apple.mobilesafari
+
+steps:
+  - task: "Open Safari and go to en.wikipedia.org"
+  - assert: "Wikipedia homepage is visible"
+  - task: "Search for Eiffel Tower"
+  - assert: "Eiffel Tower article is shown"

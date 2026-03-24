@@ -1,0 +1,10 @@
+name: "Enable Dark Mode"
+platform: ios
+app: com.apple.Preferences
+
+steps:
+  - task: "Open the Settings app"
+  - assert: "Settings app is open"
+  - task: "Go to Display & Brightness settings"
+  - task: "Enable Dark Mode"
+  - assert: "Dark Mode is now enabled"

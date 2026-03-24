@@ -1,0 +1,13 @@
+name: "Calculator - Basic Operations"
+platform: android
+app: com.google.android.calculator
+
+steps:
+  - task: "Open the Calculator app"
+  - assert: "Calculator app is open with a keypad visible"
+
+  - task: "Calculate 256 plus 744"
+  - assert: "The calculator shows 1000 as the result"
+
+  - task: "Clear and calculate 15 percent of 200"
+  - assert: "The calculator shows 30 as the result"

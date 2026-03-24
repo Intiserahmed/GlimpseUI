@@ -1,0 +1,17 @@
+fastapi==0.135.1
+uvicorn[standard]==0.41.0
+playwright==1.58.0
+google-genai==1.65.0
+browser-use==0.12.2
+python-dotenv==1.0.1
+Pillow==11.2.1
+pydantic==2.11.5
+pyyaml==6.0.3
+pywebview==6.1
+pyinstaller==6.19.0
+# ── Optional platform clients (install only what you need) ────────────────────
+# Android:  pip install uiautomator2
+# Desktop:  pip install pyautogui
+# macOS a11y tree: pip install atomacos
+# Windows:         pip install pywinauto
+# Linux:           pip install pyatspi

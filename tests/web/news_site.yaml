@@ -1,0 +1,12 @@
+name: "News Site Browse"
+platform: web
+url: https://news.ycombinator.com
+
+steps:
+  - task: "Click on the 'new' link to see newest submissions"
+  - check: url_contains "newest"
+  - assert: "The newest submissions page is showing recent Hacker News posts"
+
+  - task: "Click on the 'ask' link to see Ask HN posts"
+  - check: url_contains "ask"
+  - assert: "Ask HN posts are visible"

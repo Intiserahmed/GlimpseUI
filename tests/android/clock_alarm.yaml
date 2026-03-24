@@ -1,0 +1,16 @@
+name: "Clock - Set Alarm"
+platform: android
+app: com.google.android.deskclock
+
+steps:
+  - task: "Open the Clock app"
+  - assert: "Clock app is open"
+
+  - task: "Go to the Alarm tab"
+  - assert: "Alarm tab is active showing the alarms list"
+
+  - task: "Add a new alarm by tapping the + button"
+  - assert: "Alarm time picker is open"
+
+  - task: "Set the alarm to 8:00 AM and confirm"
+  - assert: "New alarm set for 8:00 AM is visible in the alarms list"

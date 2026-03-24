@@ -1,0 +1,19 @@
+name: "Contacts - Add a New Contact"
+platform: ios
+app: com.apple.MobileAddressBook
+
+steps:
+  - task: "Open the Contacts app"
+  - assert: "Contacts app is open showing the contacts list"
+
+  - task: "Tap the + button to create a new contact"
+  - assert: "New contact form is open with fields for name and phone"
+
+  - task: "Enter the first name 'Jane' and last name 'Doe'"
+  - assert: "The contact form shows Jane Doe as the name"
+
+  - task: "Add phone number '555-0100'"
+  - assert: "The phone number 555-0100 is visible in the contact form"
+
+  - task: "Tap Done to save the contact"
+  - assert: "The new contact Jane Doe is saved and her contact card is visible"

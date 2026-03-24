@@ -1,0 +1,17 @@
+name: "Web Smoke Suite"
+platform: web
+
+# Fast sanity check — runs in ~2 min, covers the most common web flows.
+# Use this on every PR. Full suite runs nightly.
+
+steps:
+  - task: "Go to https://duckduckgo.com and search for 'OpenAI'"
+  - check: url_contains "duckduckgo.com"
+  - assert: "Search results for OpenAI are visible"
+
+  - task: "Go to https://en.wikipedia.org and search for 'Python programming language'"
+  - assert: "The Wikipedia article about Python programming language is open"
+  - check: page_contains "Python"
+
+  - task: "Go to https://news.ycombinator.com and click the top story"
+  - assert: "An external article is open"

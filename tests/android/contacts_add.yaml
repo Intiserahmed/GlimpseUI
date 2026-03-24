@@ -1,0 +1,19 @@
+name: "Contacts - Add New Contact"
+platform: android
+app: com.google.android.contacts
+
+steps:
+  - task: "Open the Contacts app"
+  - assert: "Contacts app is open with a list of contacts"
+
+  - task: "Tap the Add contact button (+ icon)"
+  - assert: "New contact form is open"
+
+  - task: "Enter first name 'John' and last name 'Doe'"
+  - assert: "The name John Doe is in the contact form"
+
+  - task: "Add phone number '555-0199' in the phone field"
+  - assert: "Phone number 555-0199 is visible in the form"
+
+  - task: "Save the contact"
+  - assert: "The contact John Doe has been saved and is visible"

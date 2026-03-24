@@ -1,0 +1,16 @@
+name: "Notes - Create and Edit Note"
+platform: ios
+app: com.apple.mobilenotes
+
+steps:
+  - task: "Open the Notes app"
+  - assert: "Notes app is open showing the notes list or folders"
+
+  - task: "Create a new note by tapping the compose button"
+  - assert: "A blank new note is open with the keyboard visible"
+
+  - task: "Type 'Meeting notes: Discuss Q2 roadmap and feature priorities'"
+  - assert: "The text 'Meeting notes' is visible in the note"
+
+  - task: "Go back to the notes list"
+  - assert: "The notes list is visible and the new note appears at the top"

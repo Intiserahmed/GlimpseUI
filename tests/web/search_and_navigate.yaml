@@ -1,0 +1,12 @@
+name: "Search and Navigate to Result"
+platform: web
+url: https://duckduckgo.com
+
+steps:
+  - task: "Search for 'Python programming language' on DuckDuckGo"
+  - check: url_contains "duckduckgo.com"
+  - assert: "Search results for Python programming language are visible"
+
+  - task: "Click the first search result"
+  - assert: "A page about Python programming language is open"
+  - check: page_contains "Python"

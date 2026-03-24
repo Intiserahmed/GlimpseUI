@@ -1,0 +1,16 @@
+name: "Settings - Dark Theme Toggle"
+platform: android
+app: com.android.settings
+
+steps:
+  - task: "Open Settings"
+  - assert: "Settings app is open"
+
+  - task: "Navigate to Display settings"
+  - assert: "Display settings screen is open"
+
+  - task: "Enable Dark theme"
+  - assert: "Dark theme is now enabled and the screen background is dark"
+
+  - task: "Disable Dark theme and return to light mode"
+  - assert: "Light mode is restored"

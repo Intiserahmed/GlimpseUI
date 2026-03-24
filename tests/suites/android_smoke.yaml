@@ -1,0 +1,16 @@
+name: "Android Smoke Suite"
+platform: android
+
+# Fast Android sanity check — core system apps only.
+# Requires: uiautomator2 server installed (python -m uiautomator2 init).
+
+steps:
+  - task: "Open the Calculator app and calculate 50 plus 50"
+  - assert: "Calculator shows 100"
+
+  - task: "Open Settings and confirm the main settings screen is visible"
+  - assert: "Main Android settings categories are visible"
+
+  - task: "Open Chrome, navigate to https://example.com, and confirm the page loads"
+  - assert: "Example Domain page is visible with 'Example Domain' heading"
+  - check: page_contains "Example Domain"

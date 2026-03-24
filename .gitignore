@@ -1,0 +1,53 @@
+# ── Secrets ───────────────────────────────────────────────────────────────────
+.env
+*.env.local
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# ── Build / dist ──────────────────────────────────────────────────────────────
+dist/
+build/
+*.dmg
+*.pkg
+*.spec.bak
+
+# ── Compile-once cache (optional: commit this for $0 CI runs) ─────────────────
+# Remove the next line if you WANT to commit the cache to git.
+# Committing it means new devs + CI get deterministic execution immediately.
+# tests/.cache/
+
+# ── Test artifacts ────────────────────────────────────────────────────────────
+tests/reports/
+*.junit.xml
+
+# ── macOS ─────────────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+*.xcuserstate
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*~
+
+# ── Claude Code ───────────────────────────────────────────────────────────────
+.claude/
+
+# ── Misc ──────────────────────────────────────────────────────────────────────
+*.tar.gz
+screencap/
+seer/
+*.log
+.github/

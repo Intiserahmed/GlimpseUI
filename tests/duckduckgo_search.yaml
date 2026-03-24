@@ -1,0 +1,11 @@
+name: "DuckDuckGo Search"
+platform: web
+url: https://duckduckgo.com
+
+steps:
+  - task: "Search for Eiffel Tower on DuckDuckGo"
+  - check: url_contains "duckduckgo.com"
+  - assert: "Search results for Eiffel Tower are visible"
+
+  - task: "Click the first search result"
+  - assert: "An article or page about the Eiffel Tower is open"

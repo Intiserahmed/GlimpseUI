@@ -1,0 +1,16 @@
+name: "App Store - Search for an App"
+platform: ios
+app: com.apple.AppStore
+
+steps:
+  - task: "Open the App Store"
+  - assert: "App Store is open on the Today or home screen"
+
+  - task: "Tap the Search tab at the bottom"
+  - assert: "The Search tab is active with a search bar visible"
+
+  - task: "Search for 'Spotify'"
+  - assert: "Search results showing Spotify and related apps are visible"
+
+  - task: "Tap on the Spotify app in the results"
+  - assert: "The Spotify app detail page is open showing the app description and Get/Install button"

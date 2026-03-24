@@ -1,0 +1,278 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* ── Project-level build configs ─────────────────────────────────────────── */
+		1A000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGNING_ALLOWED = NO;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_TESTABILITY = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphonesimulator;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1A000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGNING_ALLOWED = NO;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_TESTABILITY = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphonesimulator;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+
+/* ── Host app build configs ───────────────────────────────────────────────── */
+		1A001001 /* Debug app */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGNING_ALLOWED = NO;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "UINavigatorBridgeApp/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uinavigator.bridge.app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphonesimulator;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1A001002 /* Release app */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGNING_ALLOWED = NO;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "UINavigatorBridgeApp/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uinavigator.bridge.app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphonesimulator;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+
+/* ── Test bundle build configs (UI test — XCTRunner) ─────────────────────── */
+		1A000003 /* Debug test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uinavigator.bridge.tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = UINavigatorBridgeApp;
+			};
+			name = Debug;
+		};
+		1A000004 /* Release test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uinavigator.bridge.tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = UINavigatorBridgeApp;
+			};
+			name = Release;
+		};
+
+/* ── Config lists ─────────────────────────────────────────────────────────── */
+		1A000010 /* project config list */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (1A000001, 1A000002);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A000011 /* test config list */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (1A000003, 1A000004);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A001010 /* app config list */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (1A001001, 1A001002);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+
+/* ── File references ──────────────────────────────────────────────────────── */
+		1A000030 /* UINavigatorBridgeTests.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = UINavigatorBridgeTests.swift;
+			sourceTree = "<group>";
+			name = UINavigatorBridgeTests.swift;
+		};
+		1A000040 /* UINavigatorBridge.xctest */ = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.cfbundle;
+			includeInIndex = 0;
+			path = "UINavigatorBridge.xctest";
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1A001020 /* AppDelegate.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = AppDelegate.swift;
+			sourceTree = "<group>";
+		};
+		1A001025 /* Info.plist */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.xml;
+			path = Info.plist;
+			sourceTree = "<group>";
+		};
+		1A001040 /* UINavigatorBridgeApp.app */ = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.application;
+			includeInIndex = 0;
+			path = UINavigatorBridgeApp.app;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+
+/* ── Build files ──────────────────────────────────────────────────────────── */
+		1A000050 /* UINavigatorBridgeTests.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = 1A000030;
+		};
+		1A001050 /* AppDelegate.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = 1A001020;
+		};
+
+/* ── Groups ───────────────────────────────────────────────────────────────── */
+		1A000060 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				1A000065,
+				1A001060,
+				1A000068,
+			);
+			sourceTree = "<group>";
+		};
+		1A000065 /* UINavigatorBridge */ = {
+			isa = PBXGroup;
+			children = (1A000030);
+			path = UINavigatorBridge;
+			sourceTree = "<group>";
+		};
+		1A001060 /* UINavigatorBridgeApp */ = {
+			isa = PBXGroup;
+			children = (1A001020, 1A001025);
+			path = UINavigatorBridgeApp;
+			sourceTree = "<group>";
+		};
+		1A000068 /* Products */ = {
+			isa = PBXGroup;
+			children = (1A000040, 1A001040);
+			name = Products;
+			sourceTree = "<group>";
+		};
+
+/* ── Build phases ─────────────────────────────────────────────────────────── */
+		1A000070 /* Test Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (1A000050);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A000080 /* Test Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A001070 /* App Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (1A001050);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A001080 /* App Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A001090 /* App Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+
+/* ── Target dependency (test → app) ──────────────────────────────────────── */
+		1A002000 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A0000A0;
+			proxyType = 1;
+			remoteGlobalIDString = 1A001100;
+			remoteInfo = UINavigatorBridgeApp;
+		};
+		1A002001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A001100;
+			targetProxy = 1A002000;
+		};
+
+/* ── Targets ──────────────────────────────────────────────────────────────── */
+		1A001100 /* UINavigatorBridgeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A001010;
+			buildPhases = (1A001070, 1A001080, 1A001090);
+			buildRules = ();
+			dependencies = ();
+			name = UINavigatorBridgeApp;
+			productName = UINavigatorBridgeApp;
+			productReference = 1A001040;
+			productType = "com.apple.product-type.application";
+		};
+		1A000090 /* UINavigatorBridge (tests) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A000011;
+			buildPhases = (1A000070, 1A000080);
+			buildRules = ();
+			dependencies = (1A002001);
+			name = "UINavigatorBridge";
+			productName = "UINavigatorBridge";
+			productReference = 1A000040;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+
+/* ── Project ──────────────────────────────────────────────────────────────── */
+		1A0000A0 /* PBXProject */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1A000010;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base);
+			mainGroup = 1A000060;
+			productRefGroup = 1A000068;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (1A001100, 1A000090);
+		};
+	};
+	rootObject = 1A0000A0;
+}

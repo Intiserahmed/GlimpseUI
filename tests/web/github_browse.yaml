@@ -1,0 +1,16 @@
+name: "GitHub Repo Browse"
+platform: web
+url: https://github.com
+
+steps:
+  - task: "Search for the 'fastapi' repository on GitHub"
+  - check: url_contains "github.com"
+  - assert: "Search results showing fastapi repositories are visible"
+
+  - task: "Open the tiangolo/fastapi repository"
+  - check: url_contains "tiangolo/fastapi"
+  - assert: "The fastapi repository page is open with README visible"
+
+  - task: "Navigate to the Issues tab"
+  - check: url_contains "issues"
+  - assert: "The Issues tab is open showing a list of issues"
